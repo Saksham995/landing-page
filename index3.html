@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Super Landing Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+	<div id="container">
+		<nav class="navbar">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Products</a>
+			<a href="#">Features</a>
+			<a href="#">Buy Now</a>
+		</nav>
+
+		<div id="background"></div>
+		<div class="section">
+			<h1 id="title" class="margin-top">Super Landing</h1>
+			<h2 class="less-margin">
+				a <span class="highlight">Wristband</span>
+				that lets you
+			</h2>
+			<br>
+			<h2>wear fitness <span class="highlight">your way</span></h2>
+
+			<h1 class="look">Find your work</h1>
+			<div class="alta">
+				<img id="alta" src="images/im.png">
+
+				<div class="button rosegold" id="rosegold" onclick="rosegoldColor()"></div>
+
+				<div class="button coral" id="coral" onclick="coralColor()"></div>
+
+				<div class="button fuschia" id="fuschia" onclick="fuschiaColor()"></div>
+
+				<div class="button black" id="black" onclick="goldColor()"></div>
+			</div>
+		</div>
+
+		<p id="desc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.
+		</p>
+	</div>
+
+	<script>
+    let alta = document.getElementById('alta');
+	let background = document.getElementById('background');
+	let title = document.getElementById('title');
+
+	function rosegoldColor() {
+	  alta.src='images/n.png';
+	  background.style.backgroundColor = 'deepskyblue';
+	  title.style.color= 'deepskyblue';
+	}
+
+	function coralColor() {
+	  alta.src='images/im.png';
+	  background.style.backgroundColor = '#FF7A6C';
+	  title.style.color= '#FF7A6C';
+	}
+
+	function fuschiaColor() {
+	  alta.src='images/ima.png';
+	  background.style.backgroundColor = '#5b2e9a';
+	  title.style.color= '#5b2e9a';
+	}
+
+	function goldColor() {
+	  alta.src= 'images/non.png';
+	  background.style.backgroundColor= '#e0bc4d';
+	  title.style.color= '#e0bc4d';
+	}
+
+    
+    
+</script>
+
+</body>
+</html>
